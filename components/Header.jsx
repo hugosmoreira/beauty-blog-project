@@ -3,7 +3,7 @@ import React, { useContext } from 'react'
 import Link from 'next/link'
 
 
-const categories = [{ name: 'React', slug: 'react' }, { name: 'Vue', slug: 'vue' }, { name: 'Angular', slug: 'angular' }]
+const categories = [{ name: 'React', slug: 'react' }, { name: 'Web Development', slug: 'web-dev' }, { name: 'Angular', slug: 'angular' }]
 
 
 const Header = () => {
@@ -19,11 +19,14 @@ const Header = () => {
                 </div>
 
                 <div className="hidden md:float-left md:contents">
-                    {categories.map((category) => {
-                        <Link key={category.slug} href={`/category/${category.slug}`} passHref>
-                            <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">{category.name}</span>
+                    {console.log(categories)}
+                    {categories.map((category) => (
+                        <Link key={category.slug} href={`/category/${category.slug}`}>
+                            <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">
+                                {category.name}
+                            </span>
                         </Link>
-                    })}
+                    ))}
 
                 </div>
             </div>
