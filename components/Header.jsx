@@ -21,7 +21,7 @@ const Header = () => {
                 <div className="md:float-left block">
                     <Link href='/'>
                         <span className='cursor-pointer font-bold text-4x1 text-white'>
-                            GraphCMS
+                            MediaDev Blog
                         </span>
                     </Link>
                 </div>
