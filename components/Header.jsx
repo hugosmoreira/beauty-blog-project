@@ -21,7 +21,7 @@ const Header = () => {
                 <div className="md:float-left block">
                     <Link href='/'>
                         <span className='cursor-pointer font-bold text-4x1 text-white'>
-                            MediaDev Blog
+                            Travel Media Blog
                         </span>
                     </Link>
                 </div>
